@@ -1,0 +1,167 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000
+}
+
+
+
+/* obshie polozheniya */
+
+p, a, h3 {
+    background-color: #01aaff;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.links {
+    background-color: #01aaff;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_text {
+    background-color: #01aaff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: auto;
+    height: auto;
+}
+
+.footer_block {
+    flex-wrap: wrap;
+    width: auto;
+    height:auto;
+    min-width: 200px;
+    background-color: #01aaff;
+}
+
+.container_0 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: auto;
+}
+
+.item_0 {
+    flex: auto;
+    background-color: #01aaff; 
+    height: auto;
+    width: 100vw;
+    min-width: 300px;
+    padding: 10px;
+}
+
+
+
+/* tut pervaya */
+
+.container_1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+}
+  
+.item_1 {
+    flex: 1;
+    background-color: #01aaff; 
+    margin: 5px;
+    height: 300px;
+    width: auto;
+    min-width: 300px;
+    padding: 10px;
+}
+  
+.item_2 {
+    flex: 1;
+    background-color: #01aaff; 
+    margin: 5px;
+    height: 300px;
+    width: auto;
+    min-width: 300px;
+    padding: 10px;
+}
+
+
+
+/* tut vtoraya */
+
+.container_3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container_4 {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    min-width: 300px
+}
+
+.item_3 {
+    flex: 1;
+    background-color: #01aaff; 
+    margin: 5px;
+    height: 500px;
+    min-width: 300px;
+    padding: 10px;
+}
+
+.item_4 {
+    display: inline-block;
+    flex: 1;
+    background-color: #01aaff; 
+    margin: 5px;
+    height: auto;
+    min-width: 300px;
+    padding: 10px;
+}
+
+
+
+/* tut tret'ya */
+
+.container_5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+}
+
+.container_6 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+}
+
+.item_5 {
+    flex: 1;
+    background-color: #01aaff; 
+    margin: 5px;
+    height: 350px;
+    width: 32%;
+    min-width: 300px;
+    padding: 10px;
+}
+
+.item_6 {
+    flex: 1;
+    background-color: #01aaff; 
+    margin: 5px;
+    height: 200px;
+    width: 49%;
+    min-width: 300px;
+    padding: 10px;
+}

@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* письмо  */
+
+.container {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_box {
+    display: block;
+    position: relative;
+    width: auto;
+    height: 500px;
+    margin-top: 90px;
+    border-radius: 50%;
+    animation: shake 2s infinite;
+    animation-iteration-count: 1;
+}
+
+.img_letter {
+    display: block;
+    width: 100px;
+    margin-top: -100px;
+    margin-left: 37vh;
+    height: 75px;
+    position: relative;
+    animation: falling 1s infinite;
+    animation-iteration-count: 1;
+    z-index: 2;
+}
+
+@keyframes falling {
+    0% {
+      transform: translateY(0px);
+      opacity: 0;
+      display: none;
+    }
+    50% {
+        opacity: 1;
+      }
+    100% {
+      transform: translateY(250px);
+      opacity: 0;
+    }
+  }
+
+  @keyframes shake {
+    0% {
+        rotate: 0deg;
+    }
+    40% {
+        rotate: 0deg;
+        background-color: #fff;
+    }
+    50% {
+        rotate: 15deg;
+        background-color: #f00;
+    }
+    60% {
+        rotate: 0deg;
+        background-color: #fff;
+    }
+    70% {
+        rotate: -15deg;
+        background-color: #00f;
+    }
+    90% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 0deg;
+    }
+  }
+
+
+
+/* лампа с буквами */
+
+  .img_lamp {
+    height: 100px;
+    padding-top: 10%;
+    animation: lamp 1s infinite;
+    margin-left: 170px;
+}
+
+.text_1 {
+    font-size: 100px;
+    letter-spacing: 30px;
+    z-index: 1;
+}
+
+.text_2 {
+    font-size: 100px;
+    padding-bottom: 100px;
+    animation: meow 1s infinite;
+    margin-left: 190px;
+    z-index: 2;
+}
+
+@keyframes meow {
+    0%{
+        animation-play-state: paused;
+        transform: translateY(-115px);
+    }
+    40%{
+        transform:translateY(-125px) scale(1, 0.1); 
+    }
+    100%{
+        transform: translateY(-135px);
+    }
+ }
+
+@keyframes lamp {
+   0% {
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateY(100px);
+    }
+    40%{
+        transform: translateY(0px);
+    }
+}
+
+
+
+/* новости */
+
+.news-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .news-item {
+    width: 200px;
+    height: 100px;
+    background-color: #f2f2f2;
+    margin: 20px;
+    opacity: 0;
+    animation: news 1s ease-in-out;
+    animation-fill-mode: forwards; 
+  }
+
+  @keyframes news {
+    0% {
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+
+
+  /* часы */
+
+.clock {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 5em;
+    border: 4px solid #000000;
+    border-radius: 50%;
+    }
+    
+    .minuta { 
+    position: absolute; 
+    width: 3px; 
+    height: 35px; 
+    left: 51px; 
+    top: 16px;
+    border-radius: 10px;
+    background-color: #000000;
+    animation: rot 60s infinite;
+    transform-origin: 0 34px; 
+    }
+    
+    .hour {
+    position: absolute;
+    width: 4px;
+    height: 28px;
+    left: 50px;
+    top: 20px;
+    border-radius: 10px;
+    background-color: #000000;
+    animation: rot 3600s infinite;
+    transform-origin: 0 30px;
+    }
+    
+    .elev, .three, .six, .nine { 
+        position: absolute;
+        font-weight: bold;
+        font-size: 18px;
+        color: #000000;
+    }
+        
+    .elev {
+        top: 3px;
+        left: 48px;
+    }
+        
+    .three {
+        top: 38px;
+        left: 85px;
+        rotate: 90deg;
+    }
+        
+    .six {
+        top: 78px;
+        left: 48px;
+     }
+        
+    .nine {
+        top: 38px;
+        left: 10px;
+        rotate: 90deg;
+    }   
+
+    @keyframes rot {
+    100%{
+    transform: rotate(360deg);
+    }
+    }
+    
+
+
+/* медведь */
+
+.head {
+    width: 120px;
+    height: 120px;
+    background-color: #000000;
+    border-radius: 60px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+}
+
+.ears_1 {
+    width: 40px;
+    height: 40px;
+    background-color: #000000;
+    border-radius: 60px;
+    margin-left: 107px;
+    animation: ears_1 1s infinite;
+}
+
+.ears_2 {
+    width: 40px;
+    height: 40px;
+    background-color: #000000;
+    border-radius: 60px;
+    margin-left: 175px;
+    animation: ears_2 1s infinite;
+}
+
+
+.eye_1 {
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 60px;
+    margin-bottom: 50px;
+    margin-left: 125px;
+    animation: eye_1 1s infinite;
+
+}
+
+.eye_2 {
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 60px;
+    margin-bottom: 50px;
+    margin-left: 175px;
+    animation: eye_2 1s infinite
+}
+
+.mouth {
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 60px;
+    margin-bottom: 50px;
+    margin-left: 145px;
+    animation: mouth 1s infinite;
+}
+
+.nose {
+    width: 10px;
+    height: 10px;
+    background-color: #000000;
+    border-radius: 60px;
+    left: 50%;
+    animation: nose 1s infinite;
+}
+
+@keyframes mouth {
+    0%{
+        transform: translateY(-320px);
+    }
+    50%{
+        transform: translateY(-320px);
+    }
+    100%{
+        transform: translateY(-320px);
+    }
+}
+
+@keyframes ears_1 {
+    0%{
+        transform: translateY(-200px);
+    }
+    50%{
+        transform: translateY(-160px);
+    }
+    100%{
+        transform: translateY(-200px);
+    }
+}
+
+@keyframes ears_2 {
+    0%{
+        transform: translateY(-240px);
+    }
+    50%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(-240px);
+    }
+}
+
+@keyframes eye_1 {
+    0%{
+        transform: translateY(-220px);
+    }
+    50%{
+        transform: translateY(-220px) scale(1, 0.1);
+    }
+    100%{
+        transform: translateY(-220px);
+    }
+}
+
+@keyframes eye_2 {
+    0%{
+        transform: translateY(-290px);
+    }
+    50%{
+        transform: translateY(-290px) scale(1, 0.9);
+    }
+    100%{
+        transform: translateY(-290px);
+    }
+}
+
+@keyframes nose {
+    0%{
+        transform: translateX(10px);
+    }
+    50%{
+        transform: translateX(15px);
+    }
+    100%{
+        transform: translateX(10px);
+    }
+}
