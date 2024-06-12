@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+}
+
+h1 {
+  color: #fff;
+}
+
+.mainWallpaper {
+  background-image: url('imagePeisage.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  padding: 23%;
+}
+
+.mainButton {
+  margin: 2%;
+  width: 300px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #000;
+  border-radius: 30px;
+}
+
+.mainButton:hover {
+  cursor: pointer;
+  border: 3px solid #000;
+}
+
+.firstBlock {
+  flex: 1;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.container_5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+}
+
+.container_6 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+}
+
+.item_5 {
+  flex: 1;
+  background-color: #ff9300;
+  margin: 5px;
+  height: 350px;
+  width: 32%;
+  min-width: 300px;
+  padding: 10px;
+}
+
+.item_6 {
+  flex: 1;
+  background-color: #ff9300;
+  margin: 5px;
+  height: 200px;
+  width: 49%;
+  min-width: 300px;
+  padding: 10px;
+}
+
+#slider-container {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100vw;
+  margin: auto;
+}
+
+#slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  height: 300px;
+  text-align: center;
+}
+
+#prev, #next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#prev {
+  left: 10px;
+}
+
+#next {
+  right: 10px;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0;
+  opacity: 0;
+}
+
+.indicator {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.thirdBlock {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+}
+
+.img  {
+  height: 100px;
+  width: 100px;
+}
+.blktxt {
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
